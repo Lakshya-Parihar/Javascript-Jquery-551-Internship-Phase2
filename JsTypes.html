@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Types of Javascript</title>
+    <script type="text/javascript">
+       
+       function alertInternal() {
+        alert('Hello !');
+       }
+
+       function confirmInternal() {
+        if(confirm('Are you Sure ?')) {
+            alert('Yes');
+        }
+        else {
+            alert('No');
+        }
+       }
+
+       function promptInternal() {
+        var Fname=prompt('Enter Your First Name : ');
+        var Lname=prompt('Enter Your Last Name : ');
+        alert(Fname + " " + Lname);
+       }
+    </script>
+    <script src="JsTypes.js"></script>
+</head>
+<body bgcolor="yellow">
+
+    <div style="background-color: red; height: 300px; width: 300px;"></div><br>
+    <hr color="green"><br>
+    
+    <input type="button" onclick="alert('Hello !')" value="Alert Inline">&nbsp;&nbsp;&nbsp;
+    <input type="button" onclick="confirm('Are you sure ?')" value="Confirm Inline">&nbsp;&nbsp;&nbsp;
+    <input type="button" onclick="prompt('Enter your First Name')" value="Prompt Inline">
+    
+    <br><br><hr color="green"><br>
+
+    
+    <input type="button" onclick="alertInternal()" value="Alert Internal">&nbsp;&nbsp;&nbsp;
+    <input type="button" onclick="confirmInternal()" value="Confirm Internal">&nbsp;&nbsp;&nbsp;
+    <input type="button" onclick="promptInternal()" value="Prompt Internal">
+    
+    <br><br><hr color="green"><br>
+
+    
+    <input type="button" onclick="AlertExternal()" value="Alert Exeternal">&nbsp;&nbsp;&nbsp;
+    <input type="button" onclick="ConfirmExternal()" value="Confirm External">&nbsp;&nbsp;&nbsp;
+    <input type="button" onclick="PromptExternal()" value="Prompt External">
+    
+    <br><br><hr color="green">
+
+</body>
+</html>
