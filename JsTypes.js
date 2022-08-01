@@ -15,4 +15,4 @@ function AlertExternal() {
     var Fname=prompt('Enter Your First Name : ');
     var Lname=prompt('Enter Your Last Name : ');
     alert(Fname + " " + Lname);
-   }
+   } 
