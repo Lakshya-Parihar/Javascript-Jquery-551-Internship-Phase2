@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Types of Javascript</title>
+    <script type="text/javascript">
+       
+       function alertInternal() {
+        alert('Hello !');
+       }
+
+       function confirmInternal() {
+        if(confirm('Are you Sure ?')) {
+            alert('Yes');
+        }
+        else {
+            alert('No');
+        }
+       }
+
+       function promptInternal() {
+        var Fname=prompt('Enter Your First Name : ');
+        var Lname=prompt('Enter Your Last Name : ');
+        alert(Fname + " " + Lname);
+       }
+
+       function BodyBgColor() {
+       document.body.style.backgroundColor=prompt('Enter the Name of Color : ');
+       }
+
+       function BodyDivColor() {
+        document.getElementById('Js').style.backgroundColor=prompt('Enter the Name of Color : ');
+       }
+
+       function BodyBgColorAqua() {
+        document.body.style.backgroundColor='Aqua';
+       }
+
+       function BodyDivColorWhite() {
+        document.getElementById('Js').style.backgroundColor='White';
+       }
+
+       function BodyBgCp() {
+        document.body.style.backgroundColor=document.getElementById('BgCp').value;
+       }
+
+       function BodyDivCp() {
+        document.getElementById('Js').style.backgroundColor=document.getElementById('DivCp').value;
+       }
+
+       function MaxTwo() {
+        var a = prompt('Enter the First Number : ');
+        var b = prompt('Enter the Second Number : ');
+        if(a > b) {
+            alert( a + " is the Greater Number.");
+        }
+        else {
+            alert(b + " is the Greater Number.");
+        }
+       }
+
+       function AreaCir() {
+        var r = prompt("Enter the Radius of Circle : ");
+        var area;
+        pie = 3.14;
+        area = pie * r * r;
+        alert('The Area of Circle is ' + area);
+       }
+
+       function Swap() {
+        var a = prompt('Enter the Value of a : ');
+        var b = prompt('Enter the Value of b : ');
+        var c;
+        var d = a;
+        var e = b;
+        c = a;
+        a = b;
+        b = c;
+
+        alert("Before Swapping :- a = " + d + " , b = " + e + " ; " + "After Swapping :- a = " + a + " , b = " + b); 
+       }
+
+       function Square() {
+        var num = prompt('Enter Number to Find Square : ');
+        var Square = num * num;
+        alert('The Square of the Entered Number ' + num + " is " + Square); 
+       }
+    </script>
+    <script src="JsTypes.js"></script>
+</head>
+<body bgcolor="yellow">
+
+    <div style="background-color: red; height: 300px; width: 300px; text-align: center; font-size: larger;" id="Js">Lakshya Parihar</div>
+    <hr color="green">
+    
+    <input type="button" onclick="alert('Hello !')" value="Alert Inline">&nbsp;&nbsp;&nbsp;
+    <input type="button" onclick="confirm('Are you sure ?')" value="Confirm Inline">&nbsp;&nbsp;&nbsp;
+    <input type="button" onclick="prompt('Enter your First Name')" value="Prompt Inline">
+    
+    <hr color="green">
+
+    
+    <input type="button" onclick="alertInternal()" value="Alert Internal">&nbsp;&nbsp;&nbsp;
+    <input type="button" onclick="confirmInternal()" value="Confirm Internal">&nbsp;&nbsp;&nbsp;
+    <input type="button" onclick="promptInternal()" value="Prompt Internal">
+    
+    <hr color="green">
+
+    
+    <input type="button" onclick="AlertExternal()" value="Alert Exeternal">&nbsp;&nbsp;&nbsp;
+    <input type="button" onclick="ConfirmExternal()" value="Confirm External">&nbsp;&nbsp;&nbsp;
+    <input type="button" onclick="PromptExternal()" value="Prompt External">
+    
+    <hr color="green">
+
+    <input type="button" onclick="BodyBgColor()" value="Click here to Change Body Background Color">&nbsp;&nbsp;&nbsp;
+    <input type="button" onclick="BodyDivColor()" value="Click here to Change Body Div Color">&nbsp;&nbsp;&nbsp;
+
+    <hr color="green">
+
+    <input type="button" onclick="BodyBgColorAqua()" value="Body Background Color Aqua">&nbsp;&nbsp;&nbsp;
+    <input type="button" onclick="BodyDivColorWhite()" value="Body Div Color White">&nbsp;&nbsp;&nbsp;
+
+    <hr color="green">
+
+    <input type="color" onchange="BodyBgCp()" id="BgCp">&nbsp;&nbsp;&nbsp;
+    <input type="color" onchange="BodyDivCp()" id="DivCp">&nbsp;&nbsp;&nbsp;
+
+    <hr color="green">
+
+    <input type="button" onclick="MaxTwo()" value="Click here to Find Maximum of Two Numbers">&nbsp;&nbsp;&nbsp;
+    <input type="button" onclick="AreaCir()" value="Click here to Calculate Area of Circle">&nbsp;&nbsp;&nbsp;
+
+    <hr color="green">
+
+    <input type="button" onclick="Swap()" value="Click here to Swap the Values">&nbsp;&nbsp;&nbsp;
+    <input type="button" onclick="Square()" value="Click here to Find Square of a Number">&nbsp;&nbsp;&nbsp;
+
+    <hr color="green">
+
+</body>
+</html>
