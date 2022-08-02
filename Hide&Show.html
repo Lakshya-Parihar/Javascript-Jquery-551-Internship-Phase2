@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Hide</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#hide").click(function() {
+                $("p").hide();
+            });
+        });
+        $(document).ready(function() {
+            $("#show").click(function() {
+                $("p").show();
+            });
+        });
+    </script>
+</head>
+<body>
+    <p>
+        This is some text Paragraph,we are using <br>
+        Hide Paragraph Program using Jquery. <br> 
+    </p>
+    <button id="hide">Hide paragraph</button><br><br>
+    <button id="show">Show Paragraph</button><br><br>
+</body>
+</html>
