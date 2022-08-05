@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Focus-Blur-Keypress-Keyup</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function() {
+
+        $("#txtFocus").focus( function() {
+            $(this).css("background-color","lime");
+        });
+        
+        $("#txtBlur").blur( function() {
+            $(this).css("background-color","red");
+            $(this).css("color","white");
+        });
+
+        $("#KeyPress").keypress( function() {
+            alert($(this).val());
+        });
+
+        $("#KeyUp").keyup(function() {
+            alert($(this).val());
+        });
+
+    });
+</script>
+
+<style>
+    #Div1
+    {
+        text-align: center;
+        
+    }
+</style>
+</head>
+<body bgcolor="#f44336" text="white">
+    <div id="Div1"><hr color="lime">
+    Name : <input type="text" id="txtFocus" placeholder="Enter Your Name"><br><hr color="lime"><br>
+    E-mail : <input type="email" id="txtBlur" placeholder="Enter Your E-mail"><br><hr color="lime"><br>
+    KeyPress : <input type="text" id="KeyPress" placeholder="Enter Some Text"><br><hr color="lime"><br>
+    KeyUp : <input type="text" id="KeyUp" placeholder="Enter Some Text"><br><hr color="lime"><br>
+</div>
+</body>
+</html>
