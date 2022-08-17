@@ -1,35 +1,39 @@
-<html>
-    <head>
-        <title>PopOverModel</title>
-        <meta charset = "utf-8">
-      <title>Dialog-functionality-jQuery-UI</title>
+<!doctype html>
+<html lang = "en">
+   <head>
+      <meta charset = "utf-8">
+      <title>PopOver-Dialogue</title>
       <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel = "stylesheet" type="text/css">
       <script src = "https://code.jquery.com/jquery-1.10.2.js" type="text/javascript"></script>
       <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js" type="text/javascript"></script>
       <style type="text/css">
-        .ui-widget-header,.ui-state-default, ui-button {
-            background:#6dcd9d;
-            border: 1px solid #0fd84b;
-            color: #0e0ae4;
+         .ui-widget-header,.ui-state-default, ui-button {
+            background:#001aff;
+            border: 1px solid #131312;
+            color: #FFFFFF;
             font-weight: bold;
          }
-      </style> 
-        <script type = "text/javascript">
-            $(document).ready(function(){
-                $("#MyDiv").dialog({
-                    autoOpen: true,
-                 });
-                $("#MyButton").click(function () {
-                    $("#MyDiv").dialog("open");
-                });
-            });
-        </script>
-    </head>
-    <body>
-        <div id="MyDiv" title="My Div title...">
-            My Div Description
-            <input type="text" />
-        </div>
-        <button id = "MyButton">Click Here</button>
-    </body>
+      </style>
+      <script type = "text/javascript">
+          $(document).ready(function(){
+              $("#div").dialog({
+                  autoOpen: false,
+               });
+              $("#button").click(function () {
+                  $("#div").dialog("open");
+              });
+          });
+      </script>
+   </head>
+   
+   <body>
+      <div id = "div" title="Open your favourite site:">
+          
+           <a href="http://www.google.com">Google</a><hr/>
+           <a href="http://www.facebook.com" target="_blank">facebook</a><hr/>
+           <a href="http://www.gmail.com" target="_blank">Gmail</a><hr/>
+           
+      </div>
+      <button id = "button">Click Here..</button>
+   </body>
 </html>
