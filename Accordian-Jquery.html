@@ -1,58 +1,68 @@
 <!doctype html>
-<html lang="en">
+<html lang = "en">
+   <head>
+      <meta charset = "utf-8">
+      <title>Accordion-JQuery-UI</title>
+      
+	  <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel ="stylesheet" type="text/css" />
+      <script src="https://code.jquery.com/jquery-1.10.2.js" type="text/javascript"></script>
+      <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js" type="text/javascript"></script>
+      
+	  <script type="text/javascript">
+             $(document).ready(function () {
+                 $("#accordion").accordion();
+             });
+      </script>
+      
+	  <style type="text/css">
+         #accordion{font-size: 14px;width:40%;}
+         #accordion div{background:#ffffff;}
+      </style>
+   </head>
+   
+   <body>
+      <div id="accordion">
+         <h3>About Silveroak University</h3>
+         <div>
+			 <p>
+				The Silver Oak University is a premier university of the country with a venerable legacy from Silver Oak Group of Institutes with acclaim for highest academic standards, diverse educational programmes, distinguished faculty, illustrious alumni, varied cocurricular activities and modern infrastructure.
 
-<head>
-    <title>Accordian-Jquery</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
-    <link rel="stylesheet" href="/resources/demos/style.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
-    <script>
-        $(function () {
-            $("#accordion").accordion();
-        });
-    </script>
-</head>
+Over eleven years of its existence as Silver Oak Group of Institutes, the group has sustained the highest global standards and best practices in education. Its long-term commitment to nation building and unflinching adherence to universal human values are reflected in its motto: “Gyanam Param Bhushanam” and “Education to Innovation”.
 
-<body>
-
-    <div id="accordion">
-        <h3>Section-1/Tab-1</h3>
-        <div>
+Established in 2009 as an affiliated college today State government has accorded it with the status of a State Private University (under Gujarat Private Universities Act, 2009). A strong commitment to excellence in teaching, research and social outreach has made the University a role-model and trend setter for other Institutes and Universities. Beginning with 240 students, it has grown as one of the largest engineering campuses with more than 7000 students just in span of a little more than a decade.
+			 </p>
+		 </div>
+         <h3>Photo</h3>
+         <div>
             <p>
-                Hello Students :)
+				<img src="silveroak.jpeg" height="400px"; width="400px";>
             </p>
-        </div>
-        <h3>Section-2/Tab-2</h3>
-        <div>
-            <p> Silver Oak University
-            </p>
-        </div>
-        <h3>Section-3/Tab-3</h3>
-        <div>
+         </div>
+         <h3>List of programme</h3>
+         <div>
             <p>
-                B.C.A.
+				* Computer Engineering<br/>
+                * Information Technology<br/>
+                * Civil Engineering<br/>
+                * Cyber Security<br/>
+                * B.C.A<br/>
+                * M.C.A<br/>
+                * M.S.C.I.T<br/>
+                * B.Com<br/>
+                * M.Com<br/>
+                * PGDCA<br/>
             </p>
-            <ul>
-                <li>List item one</li>
-                <li>List item two</li>
-                <li>List item three</li>
-            </ul>
-        </div>
-        <h3>Section-4/Tab-4</h3>
-        <div>
+            </p>
+            </p>
+            </p>
+            </p>
+         </div>
+		 <h3>Address</h3>
+         <div>
             <p>
-                Computer application.
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3670.1734786512147!2d72.53263041495799!3d23.090744519571167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e833af6f39347%3A0xf1db9065daea7008!2sSilver%20Oak%20College%20of%20Engineering%20and%20Technology!5e0!3m2!1sen!2sin!4v1650433508450!5m2!1sen!2sin" width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><hr/>
             </p>
-            <p>
-                Exam Hall
-            </p>
-        </div>
-    </div>
-
-
-</body>
-
+         </div>
+      </div>
+   </body>
 </html>
